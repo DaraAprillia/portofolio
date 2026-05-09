@@ -4,78 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolusi Industri</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Work.html">WORK</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-    <main>
-        <div id="Education" class="Portofolio">
-            <div class="headersklills">
-                <h1>Revolusi <span>Industri</span></h1>
-                <p>Revolusi Industri adalah perubahan besar dalam sistem produksi dan ekonomi yang ditandai dengan peralihan dari tenaga manusia 
-                    dan hewan ke penggunaan mesin serta teknologi canggih. Revolusi ini membawa perubahan signifikan dalam cara manusia bekerja, 
-                    berproduksi, dan berinteraksi. Dimulai pada akhir abad ke-18 di Inggris dengan penggunaan mesin uap, revolusi ini terus berkembang 
-                    hingga era digital saat ini, di mana teknologi seperti kecerdasan buatan (AI) dan Internet of Things (IoT) semakin mendominasi berbagai sektor kehidupan. 
-                    Revolusi Industri telah membawa dampak besar, baik positif maupun negatif, terhadap ekonomi, sosial, dan budaya di seluruh dunia.</p>
-            </div>
-            <div class="portofolio-container">
-                <div class="sejarah-box">
-                    <div class="education-image">
-                        <a href="image/revolusi industri 1.0.jpg"><img src="image/revolusi industri 1.0.jpg" alt="Revolusi Industri" /></a>
-                    </div>
-                    <div class="education-info">
-                        <br>
-                        <h1><a href="revolusi1.html"> Revolusi Industri 1.0</a></h1>
-                    </div>
-                </div>
-                <div class="sejarah-box">
-                    <div class="education-image">
-                        <a href="image/revolusi industri 2.0.jpg"><img src="image/revolusi industri 2.0.jpg" alt="Revolusi Industri" /></a>
-                    </div>
-                    <div class="education-info">
-                        <br>
-                        <h1><a href="revolusi2.html"> Revolusi Industri 2.0</a></h1>
-                    </div>
-                </div>
-                <div class="sejarah-box">
-                    <div class="education-image">
-                        <a href="image/revolusi industri 3.0.jpg"><img src="image/revolusi industri 3.0.jpg" alt="Revolusi Industri" /></a>
-                    </div>
-                    <div class="education-info">
-                        <br>
-                        <h1><a href="revolusi3.html"> Revolusi Industri 3.0</a></h1>
-                    </div>
-                </div>
-                <div class="sejarah-box">
-                    <div class="education-image">
-                        <a href="image/revolusi industri 4.0.jpg"><img src="image/revolusi industri 4.0.jpg" alt="Revolusi Industri" /></a>
-                    </div>
-                    <div class="education-info">
-                        <br>
-                        <h1><a href="revolusi4.html"> Revolusi Industri 4.0 </a></h1>
-                    </div>
-                </div>
-            </div>
+    <div class="page-hero">
+        <span class="tag">✦ History Project</span>
+        <h1>Revolusi <em>Industri</em></h1>
+        <p>Revolusi Industri adalah perubahan besar dalam sistem produksi dan ekonomi — dari tenaga manusia ke mesin, hingga era digital dan kecerdasan buatan yang mendominasi dunia saat ini.</p>
+        <div style="margin-top:20px;">
+            <a href="https://github.com/daraaprilia" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;font-size:.9rem;">
+                <i class='bx bxl-github'></i> Lihat di GitHub
+            </a>
         </div>
-    </main>
+    </div>
 
-<footer class="footer">
-    <p> dara's portofolio &copy; 2024, Indonesia</p>
-</footer>
+    <section class="section">
+        <div class="cards-grid">
+
+            <a href="revolusi1.html" class="project-card" style="text-decoration:none;">
+                <img src="image/revolusi industri 1.0.jpg" alt="Revolusi Industri 1.0" class="project-img">
+                <div class="project-body">
+                    <div class="project-type">Abad ke-18</div>
+                    <h3>Revolusi Industri 1.0</h3>
+                    <p>Penemuan mesin uap oleh James Watt yang mengubah sistem produksi dari tenaga manual menjadi mekanis. Diterapkan pertama di industri tekstil Inggris.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Mesin Uap</span>
+                        <span class="project-tag">Tekstil</span>
+                        <span class="project-tag">Inggris</span>
+                    </div>
+                    <div class="project-links" style="pointer-events:none;">
+                        <span class="btn-gh" style="background:var(--rose);color:#fff;padding:7px 16px;border-radius:99px;font-size:.8rem;font-weight:500;">Baca Selengkapnya →</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="revolusi2.html" class="project-card" style="text-decoration:none;">
+                <img src="image/revolusi industri 2.0.jpg" alt="Revolusi Industri 2.0" class="project-img">
+                <div class="project-body">
+                    <div class="project-type">Awal Abad ke-20</div>
+                    <h3>Revolusi Industri 2.0</h3>
+                    <p>Ditemukannya tenaga listrik oleh Nikola Tesla & bola pijar oleh Edison. Era assembly line dan produksi massal mobil mengubah wajah industri global.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Listrik</span>
+                        <span class="project-tag">Assembly Line</span>
+                        <span class="project-tag">Otomotif</span>
+                    </div>
+                    <div class="project-links" style="pointer-events:none;">
+                        <span class="btn-gh" style="background:var(--rose);color:#fff;padding:7px 16px;border-radius:99px;font-size:.8rem;font-weight:500;">Baca Selengkapnya →</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="revolusi3.html" class="project-card" style="text-decoration:none;">
+                <img src="image/revolusi industri 3.0.jpg" alt="Revolusi Industri 3.0" class="project-img">
+                <div class="project-body">
+                    <div class="project-type">Akhir Abad ke-20</div>
+                    <h3>Revolusi Industri 3.0</h3>
+                    <p>Era digital dan internet. Komputer, transistor, dan integrated chip mengubah cara manusia berkomunikasi dan bekerja secara fundamental.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Digital</span>
+                        <span class="project-tag">Internet</span>
+                        <span class="project-tag">Komputer</span>
+                    </div>
+                    <div class="project-links" style="pointer-events:none;">
+                        <span class="btn-gh" style="background:var(--rose);color:#fff;padding:7px 16px;border-radius:99px;font-size:.8rem;font-weight:500;">Baca Selengkapnya →</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="revolusi4.html" class="project-card" style="text-decoration:none;">
+                <img src="image/revolusi industri 4.0.jpg" alt="Revolusi Industri 4.0" class="project-img">
+                <div class="project-body">
+                    <div class="project-type">Awal Abad ke-21</div>
+                    <h3>Revolusi Industri 4.0</h3>
+                    <p>Integrasi teknologi digital, AI, cloud computing, dan big data. Indonesia merespons lewat program "Making Indonesia 4.0" di lima sektor utama.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Big Data</span>
+                    </div>
+                    <div class="project-links" style="pointer-events:none;">
+                        <span class="btn-gh" style="background:var(--rose);color:#fff;padding:7px 16px;border-radius:99px;font-size:.8rem;font-weight:500;">Baca Selengkapnya →</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

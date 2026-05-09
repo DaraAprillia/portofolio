@@ -3,84 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolusi Industri</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Revolusi Industri 1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Sejarah.html">SEJARAH</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portofolio.html">Portfolio</a></li>
+            <li><a href="Work.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-    <main>
-        <div id="Article" class="Article">
-            <div class="Article">
-                <h1>Revolusi Industri 1.0</h1>
-            </div>
-            <div class="Article-container">
-                <div class="Article-box">
-                    <div class="Article-image">
-                        <a href="image/revolusi1.jpg"><img src="image/revolusi1.jpg" alt="revolusi " /></a>
-                        <hr>
-                    </div>
-                    <div class="Sejarah-info">
-                        <br>
-                        <br>
-                        <p><strong>Revolusi Industri 1.0</strong> dimulai pada <strong> abad ke-18</strong> ketika James Watt menemukan mesin uap, yang mengubah sistem produksi dari <strong> tenaga manual</strong> menjadi <strong> mekanis. </strong>
-                            Penemuan ini pertama kali diterapkan di Inggris dalam industri tekstil, meningkatkan produktivitas secara signifikan. Selain itu, mesin uap juga diimplementasikan dalam sektor transportasi, 
-                            menggantikan tenaga angin yang tidak selalu bisa diandalkan. Dengan mesin uap, kapal dapat <strong> berlayar selama 24 jam penuh,</strong> memungkinkan bangsa Eropa memperluas pengaruhnya melalui <strong> kolonialisme di Afrika</strong> dan <strong >Asia.</strong> 
-                            Revolusi ini membawa perubahan besar dalam dunia kerja dan transportasi, menjadikan produksi lebih efisien dan meningkatkan perdagangan global.
-                            <br>
-                            <br>
-                            Namun, Revolusi Industri 1.0 juga memiliki <strong>dampak negatif,</strong>  terutama terhadap lingkungan. Penggunaan kayu dan batu bara sebagai bahan bakar menyebabkan <strong> polusi udara</strong> dan <strong> limbah pabrik</strong> yang mencemari lingkungan. 
-                            Meskipun demikian, revolusi ini berhasil meningkatkan perekonomian global dengan peningkatan pendapatan per kapita hingga enam kali lipat dalam dua abad setelahnya. Dengan berkembangnya teknologi, Revolusi Industri 1.0 
-                            menjadi fondasi bagi perubahan besar yang terjadi di era industri berikutnya. Untuk memahami lebih dalam, pembahasan ini dapat ditemukan dalam buku <strong> <em>Dasar-Dasar Memahami Revolusi Industri.</em></strong>
-                            <br>
-                            <br>
-                            <strong>Contoh Revolusi Industri 1.0</strong><br>
-                            > Adanya keanisasi mesin pintal pada indsutri tekstil.<br>
-                            > Kemajuan perkembangan dan kemajuan pesat dalam industr besi dan baja.<br>
-                            > Adanya alat transportasi berupa kapal uap dan kereta api.<br>
-                            <br>
-                            <strong>Dampak Positif Revolusi Industri 1.0</strong><br>
-                            > Mempercepat pertumbuhan ekonomi.<br>
-                            > Berkembangnya sistem transportasi.<br>
-                            > Peningkatan efektifitas dan efisiensi dalam segi produksi dan distribusi produk.<br>
-                            > Barang melimpah dan berharga murah.<br>
-                            <br>
-                            <strong>Dampak Negatif Revolusi Industri 1.0</strong><br>
-                            > Eksploitasi Tenaga Kerja<br>
-                            > Polusi Lingkungan<br>
-                            > Ketimpangan Sosial<br>
-                            > Hilangnya Pekerjaan Tradisional<br>
-                            > Kepadatan Penduduk di Kota<br>
-                            <br>
-                            <a href="https://www.gramedia.com/literasi/pengertian-revolusi-industri/">
-                            Sumber: Gramedia.com
-                            </a><br>
-                            <a href="https://kumparan.com/ragam-info/4-ciri-revolusi-industri-1-0-beserta-sejarah-singkat-dan-contohnya-210YLdOKW7v">
-                                Sumber: kumparan.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <article class="article-section">
+
+        <!-- Back + GitHub -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:12px;">
+            <a href="Sejarah.html" style="display:inline-flex;align-items:center;gap:6px;color:var(--rose);font-size:.9rem;font-weight:500;text-decoration:none;">
+                <i class='bx bx-arrow-back'></i> Kembali ke Revolusi Industri
+            </a>
+            <a href="https://github.com/daraaprilia" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;padding:9px 20px;">
+                <i class='bx bxl-github'></i> Lihat di GitHub
+            </a>
         </div>
-    </main>
+
+        <!-- Label & Title -->
+        <span style="font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500;">Abad ke-18</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);color:var(--ink);margin:10px 0 24px;line-height:1.1;">Revolusi Industri <em style="color:var(--rose);">1.0</em></h1>
+
+        <img src="image/revolusi1.jpg" alt="Revolusi Industri 1.0" class="article-hero-img">
+
+        <!-- Konten -->
+        <p><strong>Revolusi Industri 1.0</strong> dimulai pada <strong>abad ke-18</strong> ketika James Watt menemukan mesin uap, yang mengubah sistem produksi dari <strong>tenaga manual</strong> menjadi <strong>mekanis</strong>. Penemuan ini pertama kali diterapkan di Inggris dalam industri tekstil, meningkatkan produktivitas secara signifikan.</p>
+
+        <p>Selain itu, mesin uap juga diimplementasikan dalam sektor transportasi, menggantikan tenaga angin yang tidak selalu bisa diandalkan. Dengan mesin uap, kapal dapat <strong>berlayar selama 24 jam penuh</strong>, memungkinkan bangsa Eropa memperluas pengaruhnya melalui <strong>kolonialisme di Afrika dan Asia</strong>.</p>
+
+        <p>Revolusi ini membawa perubahan besar dalam dunia kerja dan transportasi, menjadikan produksi lebih efisien dan meningkatkan perdagangan global.</p>
+
+        <hr class="divider">
+
+        <p>Namun, Revolusi Industri 1.0 juga memiliki <strong>dampak negatif</strong>, terutama terhadap lingkungan. Penggunaan kayu dan batu bara sebagai bahan bakar menyebabkan <strong>polusi udara</strong> dan <strong>limbah pabrik</strong> yang mencemari lingkungan. Meskipun demikian, revolusi ini berhasil meningkatkan perekonomian global dengan peningkatan pendapatan per kapita hingga enam kali lipat dalam dua abad.</p>
+
+        <hr class="divider">
+
+        <h1>Contoh Revolusi Industri 1.0</h1>
+        <ul>
+            <li>Mekanisasi mesin pintal pada industri tekstil</li>
+            <li>Kemajuan pesat dalam industri besi dan baja</li>
+            <li>Alat transportasi berupa kapal uap dan kereta api</li>
+        </ul>
+
+        <h1>Dampak Positif</h1>
+        <ul>
+            <li>Mempercepat pertumbuhan ekonomi</li>
+            <li>Berkembangnya sistem transportasi</li>
+            <li>Peningkatan efektivitas dan efisiensi dalam produksi dan distribusi</li>
+            <li>Barang melimpah dan berharga murah</li>
+        </ul>
+
+        <h1>Dampak Negatif</h1>
+        <ul>
+            <li>Eksploitasi tenaga kerja</li>
+            <li>Polusi lingkungan</li>
+            <li>Ketimpangan sosial</li>
+            <li>Hilangnya pekerjaan tradisional</li>
+            <li>Kepadatan penduduk di kota</li>
+        </ul>
+
+        <hr class="divider">
+
+        <p style="font-size:.85rem;color:var(--muted);">Sumber:</p>
+        <a href="https://www.gramedia.com/literasi/pengertian-revolusi-industri/" target="_blank" class="source-link">Gramedia.com — Pengertian Revolusi Industri</a>
+        <a href="https://kumparan.com/ragam-info/4-ciri-revolusi-industri-1-0-beserta-sejarah-singkat-dan-contohnya-210YLdOKW7v" target="_blank" class="source-link">Kumparan.com — Ciri Revolusi Industri 1.0</a>
+
+        <!-- Navigation antar revolusi -->
+        <div style="display:flex;justify-content:flex-end;margin-top:48px;">
+            <a href="revolusi2.html" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+                Revolusi 2.0 <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+
+    </article>
 
     <footer class="footer">
-        <p> dara's portofolio &copy; 2024, Indonesia</p>
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
     </footer>
-    </body>
-    </html>
+    <script src="main.js"></script>
+</body>
+</html>

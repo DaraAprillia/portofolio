@@ -3,95 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolusi Industri</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Revolusi Industri 3.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Sejarah.html">SEJARAH</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portofolio.html">Portfolio</a></li>
+            <li><a href="Work.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-    <main>
-        <div id="Article" class="Article">
-            <div class="Article">
-                <h1>Revolusi Industri 3.0</h1>
-            </div>
-            <div class="Article-container">
-                <div class="Article-box">
-                    <div class="Article-image">
-                        <a href="image/revolusi3.png"><img src="image/revolusi3.png" alt="revolusi " /></a>
-                        <hr>
-                    </div>
-                    <div class="Sejarah-info">
-                        <br>
-                        <br>
-                    <p><strong>Revolusi Industri 3.0 </strong> terjadi pada akhir <strong> abad ke-20,</strong> ditandai dengan hadirnya teknologi digital dan 
-                        internet yang mengubah cara manusia berkomunikasi serta bekerja. <strong>Sosiologi, Inggris, David Harvey,</strong> menyebut era ini 
-                        sebagai masa di mana ruang dan waktu semakin terkompresi. Revolusi ini ditandai dengan kemunculan komputer oleh Alan 
-                        Turing yang berkembang menjadi perangkat elektronik canggih, serta mesin-mesin yang mampu berpikir dan bergerak secara otomatis. 
-                        Berbeda dengan revolusi sebelumnya yang berfokus pada tenaga uap dan listrik, Revolusi Industri 3.0 menghadirkan sistem digital yang 
-                        menghubungkan dunia secara instan. Salah satu bukti awal perkembangan ini adalah <strong> Komputer Colossus</strong> yang digunakan untuk memecahkan kode 
-                        Nazi Jerman saat Perang Dunia II.<br>
-                        <br>
-                        <strong>Perkembangan teknologi</strong> di era ini mencakup inovasi dalam komputer, akses internet, perangkat lunak, dan sumber energi baru. 
-                        <strong> Penemuan semikonduktor, transistor, dan integrated chip (IC)</strong> memungkinkan komputer menjadi lebih kecil, hemat daya, serta lebih canggih. 
-                        <strong> Dampak besar</strong> dari revolusi ini adalah perubahan pola komunikasi dan bisnis, di mana perusahaan harus beradaptasi agar tetap bertahan. 
-                        Namun, revolusi ini juga menyebabkan banyak industri lebih memilih mesin daripada tenaga manusia, sehingga lapangan pekerjaan semakin berkurang. 
-                        Di sisi lain, munculnya teknologi digital juga melahirkan tren baru dalam dunia bisnis, seperti Technopreneur, yang mengandalkan inovasi berbasis 
-                        teknologi untuk menciptakan peluang usaha baru.<br>
-                        <br>
-                        <strong>Contoh Revolusi Industri 3.0</strong><br>
-                        > Teknologi komputer.<br>
-                        > Akses Internet. <br>
-                        > Peralatan elektronik seperti smartphone.<br>
-                        > Sistem perangkat lunak atau software.<br>
-                        > Pengembangan sumber energi baru.<br>
-                        <br>
-                        <strong>Dampak Positif Revolusi Industri 3.0</strong><br>
-                        > Peningkatan Efisiensi Produksi<br>
-                        > Perkembangan Teknologi Informasi dan Komunikasi<br>
-                        > Peningkatan Kualitas Produk<br>
-                        > Pertumbuhan Ekonomi dan Industri Baru<br>
-                        > Peningkatan Pendidikan dan Akses Informasi<br>
-                        > Perbaikan di Sektor Kesehatan<br>
-                        > Peluang Baru di Dunia Kerja<br>
-                        <br>
-                        <strong>Dampak Negatif Revolusi Industri 3.0</strong><br>
-                        > Pengangguran Akibat Otomatisasi<br>
-                        > Ketimpangan Sosial dan Ekonomi<br>
-                        > Keamanan Siber dan Privasi Data<br>
-                        > Dampak Lingkungan<br>
-                        > Ketergantungan pada Teknologi<br>
-                        > Penyebaran Informasi Palsu (Hoaks)<br>
-                        > Pergeseran Budaya dan Nilai Sosial<br>
-                        <br>
-                        <a href="https://www.gramedia.com/literasi/pengertian-revolusi-industri/">
-                            Sumber: Gramedia.com
-                        </a><br>
-                        <a href="https://katadata.co.id/berita/nasional/624e79f003767/revolusi-industri-latar-belakang-sejarah-contoh-dan-dampaknya">
-                            Sumber : katadata.co.id
-                        </a>
-                    </p>
-                    </div>
-                </div>
-            </div>
+    <article class="article-section">
+
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:12px;">
+            <a href="Sejarah.html" style="display:inline-flex;align-items:center;gap:6px;color:var(--rose);font-size:.9rem;font-weight:500;text-decoration:none;">
+                <i class='bx bx-arrow-back'></i> Kembali ke Revolusi Industri
+            </a>
+            <a href="https://github.com/daraaprilia" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;padding:9px 20px;">
+                <i class='bx bxl-github'></i> Lihat di GitHub
+            </a>
         </div>
-    </main>
+
+        <span style="font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500;">Akhir Abad ke-20</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);color:var(--ink);margin:10px 0 24px;line-height:1.1;">Revolusi Industri <em style="color:var(--rose);">3.0</em></h1>
+
+        <img src="image/revolusi3.png" alt="Revolusi Industri 3.0" class="article-hero-img">
+
+        <p><strong>Revolusi Industri 3.0</strong> terjadi pada akhir <strong>abad ke-20</strong>, ditandai dengan hadirnya teknologi digital dan internet yang mengubah cara manusia berkomunikasi serta bekerja. Sosiolog Inggris David Harvey menyebut era ini sebagai masa di mana ruang dan waktu semakin terkompresi.</p>
+
+        <p>Revolusi ini ditandai dengan kemunculan komputer oleh Alan Turing yang berkembang menjadi perangkat elektronik canggih. Salah satu bukti awal perkembangannya adalah <strong>Komputer Colossus</strong> yang digunakan untuk memecahkan kode Nazi Jerman saat Perang Dunia II.</p>
+
+        <p>Perkembangan teknologi di era ini mencakup inovasi dalam komputer, akses internet, perangkat lunak, dan sumber energi baru. <strong>Penemuan semikonduktor, transistor, dan integrated chip (IC)</strong> memungkinkan komputer menjadi lebih kecil, hemat daya, serta lebih canggih. Revolusi ini juga melahirkan tren baru dalam dunia bisnis, seperti <strong>Technopreneur</strong>.</p>
+
+        <hr class="divider">
+
+        <h1>Contoh Revolusi Industri 3.0</h1>
+        <ul>
+            <li>Teknologi komputer personal</li>
+            <li>Akses internet untuk publik</li>
+            <li>Peralatan elektronik seperti smartphone</li>
+            <li>Sistem perangkat lunak (software)</li>
+            <li>Pengembangan sumber energi baru</li>
+        </ul>
+
+        <h1>Dampak Positif</h1>
+        <ul>
+            <li>Peningkatan efisiensi produksi</li>
+            <li>Perkembangan teknologi informasi dan komunikasi</li>
+            <li>Peningkatan kualitas produk</li>
+            <li>Pertumbuhan ekonomi dan industri baru</li>
+            <li>Peningkatan pendidikan dan akses informasi</li>
+            <li>Perbaikan di sektor kesehatan</li>
+            <li>Peluang baru di dunia kerja</li>
+        </ul>
+
+        <h1>Dampak Negatif</h1>
+        <ul>
+            <li>Pengangguran akibat otomatisasi</li>
+            <li>Ketimpangan sosial dan ekonomi</li>
+            <li>Keamanan siber dan privasi data</li>
+            <li>Dampak lingkungan</li>
+            <li>Ketergantungan pada teknologi</li>
+            <li>Penyebaran informasi palsu (hoaks)</li>
+            <li>Pergeseran budaya dan nilai sosial</li>
+        </ul>
+
+        <hr class="divider">
+
+        <p style="font-size:.85rem;color:var(--muted);">Sumber:</p>
+        <a href="https://www.gramedia.com/literasi/pengertian-revolusi-industri/" target="_blank" class="source-link">Gramedia.com — Pengertian Revolusi Industri</a>
+        <a href="https://katadata.co.id/berita/nasional/624e79f003767/revolusi-industri-latar-belakang-sejarah-contoh-dan-dampaknya" target="_blank" class="source-link">Katadata.co.id — Revolusi Industri</a>
+
+        <div style="display:flex;justify-content:space-between;margin-top:48px;flex-wrap:wrap;gap:12px;">
+            <a href="revolusi2.html" class="btn-outline" style="display:inline-flex;align-items:center;gap:8px;">
+                <i class='bx bx-left-arrow-alt'></i> Revolusi 2.0
+            </a>
+            <a href="revolusi4.html" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+                Revolusi 4.0 <i class='bx bx-right-arrow-alt'></i>
+            </a>
+        </div>
+
+    </article>
 
     <footer class="footer">
-        <p> dara's portofolio &copy; 2024, Indonesia</p>
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
     </footer>
-    </body>
-    </html>
+    <script src="main.js"></script>
+</body>
+</html>

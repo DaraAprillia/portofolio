@@ -4,44 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Work.html">WORK</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
-    
-<main>
-    <aside>
-    <div id="content">
-        <article id="contact" class="card">
-        <h2> Contact Me!</h2><br> 
-        <form>
-            Name<br>
-            <input id="ContactForm_contact-form-name" name="name" size="30" type="text" value="" required>
-            Email<br> 
-            <input id="ContactForm_contact-form-email" name="email" size="30" type="email" required> <br>
-            Message <textarea id="ContactForm_contact-form-message" name="message"></textarea> <br>
-            <input id="ContactForm_contact-form-submit" type="submit" value="Send" onclick="alert('Silahkan isi pesan!')"><br><br>
-        </form>
-        </article>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html">Project</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
+
+    <div class="page-hero">
+        <span class="tag">✦ Let's connect</span>
+        <h1>Get in <em>Touch</em></h1>
+        <p>Punya pertanyaan, project, atau sekadar ingin say hello? Isi form di bawah dan pesan kamu akan langsung masuk ke email saya.</p>
     </div>
-    </aside>
-</main>
+
+    <section class="section">
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <h2>Kirim <em>Pesan</em></h2>
+                <p>Saya terbuka untuk kolaborasi, pertanyaan seputar project, atau diskusi tentang web development. Saya biasanya membalas dalam 1–2 hari kerja.</p>
+                <div class="contact-detail">
+                    <i class='bx bx-envelope'></i>
+                    <span>daraaprilia@smkwikrama.sch.id</span>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bx-map'></i>
+                    <span>Bogor, Jawa Barat, Indonesia</span>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxl-github'></i>
+                    <a href="https://github.com/DaraAprillia" target="_blank" style="color:var(--rose);">github.com/DaraAprillia</a>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Nama kamu" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" placeholder="Tulis pesan kamu di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-send" id="sendBtn">
+                    <i class='bx bx-send'></i> Kirim Pesan
+                </button>
+                <div class="form-msg" id="formMsg"></div>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
-        <p>dara's portofolio &copy; 2024, Indonesia</p>
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init('7pYldb44_Ius-qtt8');
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('sendBtn');
+            const msg = document.getElementById('formMsg');
+
+            btn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Mengirim...';
+            btn.disabled = true;
+            msg.style.display = 'none';
+
+            emailjs.send('service_oz8nazl', 'template_o7v9wd5', {
+                from_name:  document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message:    document.getElementById('message').value,
+            })
+            .then(() => {
+                msg.textContent = '✓ Pesan berhasil dikirim! Saya akan segera membalas.';
+                msg.className = 'form-msg success';
+                msg.style.display = 'block';
+                document.getElementById('contactForm').reset();
+            })
+            .catch((err) => {
+                console.error(err);
+                msg.textContent = '✗ Gagal mengirim. Coba hubungi via WhatsApp atau email langsung.';
+                msg.className = 'form-msg error';
+                msg.style.display = 'block';
+            })
+            .finally(() => {
+                btn.innerHTML = '<i class="bx bx-send"></i> Kirim Pesan';
+                btn.disabled = false;
+            });
+        });
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>

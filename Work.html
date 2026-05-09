@@ -3,73 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Work.html">WORK</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html" class="active">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-<main>
-    <div id="Education" class="Portofolio">
-        <div class="headersklills">
-            <h1>My <span>Work</span></h1>
-        </div>
-        <div class="portofolio-container">
-            <div class="work-box">
-                <div class="education-image">
-                    <a href="image/merokok.jpg"><img src="image/merokok.jpg" alt="Kenakalan Remaja" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1><a href="pipas.html"> Kenakalan Remaja (merokok)</a></h1>
-                </div>
-            </div>
-            <div class="work-box">
-                <div class="education-image">
-                    <a href="image/kampung adat naga.jpg"><img src="image/kampung adat naga.jpg" alt="Kampung Adat Naga" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1><a href="Basun.html">Kampung Adat Naga</a></h1>
-                </div>
-            </div>
-            <div class="work-box">
-                <div class="education-image">
-                    <a href="image/revolusi industri.jpg"><img src="image/revolusi industri.jpg" alt="Revolusi Industri" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1><a href="Sejarah.html">Revolusi Industri</a></h1>
-                </div>
-            </div>
-            <div class="work-box">
-                <div class="education-image">
-                    <a href="image/kalkulatorbiasa.jpg"><img src="image/kalkulatorbiasa.jpg" alt="kalkulator biasa" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1><a href="kalkulatorbiasa.html">Kalkulator Biasa</a></h1>
-                </div>
-            </div>
-        </div>
+    <div class="page-hero">
+        <span class="tag">✦ What I've built</span>
+        <h1>My <em>Projects</em></h1>
+        <p>A collection of projects and certificates — from school assignments to personal builds. Each one taught me something new about development and problem-solving.</p>
     </div>
-</main>
-<footer class="footer">
-    <p> dara's portofolio &copy; 2024, Indonesia</p>
-</footer>
+
+    <!-- PROJECTS -->
+    <section class="section" style="padding-bottom:0;">
+        <div class="cards-grid">
+
+            <div class="project-card fade-in fade-in-1">
+                <div class="project-img-wrap">
+                    <img src="image/Carbon-app.png" alt="Carbon App" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Website</div>
+                    <h3>Carbon - App</h3>
+                    <p>Website Carbon App adalah aplikasi modern untuk memantau dan mengurangi jejak karbon dengan tampilan futuristik dan dashboard interaktif.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/CarbonApp-React.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-2">
+                <div class="project-img-wrap">
+                    <img src="image/Reminder-app.png" alt="Reminder App" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Website</div>
+                    <h3>Reminder - App</h3>
+                    <p>Reminder App adalah aplikasi sederhana untuk membantu pengguna mengatur dan mengingat berbagai tugas penting dalam kehidupan sehari-hari.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/project-laravel-reminder-dara.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-3">
+                <div class="project-img-wrap">
+                    <img src="image/tixid.png" alt="TIXID" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Website</div>
+                    <h3>TIXID</h3>
+                    <p>Aplikasi web pembelian tiket bioskop online dengan fitur browsing film, pemilihan kursi, dan manajemen transaksi menggunakan Laravel.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Laravel</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/project-tixid.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-1">
+                <div class="project-img-wrap">
+                    <img src="image/figma.png" alt="CuppieCake" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">UI Design</div>
+                    <h3>CuppieCake</h3>
+                    <p>Figma Cuppiecake adalah desain UI/UX website toko cupcake yang tampilannya modern, manis, dan menarik untuk menampilkan produk makanan.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Figma</span>
+                        <span class="project-tag">UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/pNzRRvaPgqbhmWFjdvXEBj/halaman-login?node-id=0-1&t=ulPVuSSmjClo5RMc-0" target="_blank" class="btn-gh"><i class='bx bxl-figma'></i> Figma</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-2">
+                <div class="project-img-wrap">
+                    <img src="image/kampung adat naga.jpg" alt="Kampung Naga" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Article / Sunda</div>
+                    <h3>Kampung Adat Naga</h3>
+                    <p>Artikel web tentang Kampung Adat Naga di Tasikmalaya — sejarah, struktur adat, tradisi, upacara, dan fakta unik budaya Sunda.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/portofolio_dara.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="Basun.html" class="btn-demo">Baca Artikel</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-3">
+                <div class="project-img-wrap">
+                    <img src="image/revolusi industri.jpg" alt="Revolusi Industri" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Multi-Page / History</div>
+                    <h3>Revolusi Industri 1.0 – 4.0</h3>
+                    <p>Website multi-halaman yang membahas perkembangan Revolusi Industri dari mesin uap hingga AI — lengkap dengan dampak positif dan negatif tiap era.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/portofolio_dara.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="Sejarah.html" class="btn-demo">Lihat Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in fade-in-1">
+                <div class="project-img-wrap">
+                    <img src="image/merokok.jpg" alt="Kenakalan Remaja" class="project-img">
+                </div>
+                <div class="project-body">
+                    <div class="project-type">Article / HTML</div>
+                    <h3>Kenakalan Remaja — Merokok</h3>
+                    <p>Artikel edukatif berbasis web tentang dampak merokok pada remaja. Berisi data GYTS, analisis wawancara, dan kesimpulan program anti-rokok di SMK Wikrama.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DaraAprillia/portofolio_dara.git" target="_blank" class="btn-gh"><i class='bx bxl-github'></i> GitHub</a>
+                        <a href="pipas.html" class="btn-demo">Baca Artikel</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" style="padding-top:48px;">
+        <span style="font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500;">✦ Achievements</span>
+        <h2 style="font-family:var(--font-display);font-size:2rem;color:var(--ink);margin:10px 0 8px;">My <em style="color:var(--rose);">Certificates</em></h2>
+        <p style="color:var(--muted);font-size:.95rem;margin-bottom:36px;">Sertifikasi yang saya raih dari berbagai platform dan program pelatihan.</p>
+
+        <div class="cards-grid">
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/serifikat dicoding.png" alt="Sertifikat Dicoding Web">
+                </div>
+                <div class="cert-body">
+                    <h3>Dicoding — Web Development</h3>
+                    <span>Belajar Dasar Pemrograman Web · Nov 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-2">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat dicoding js.png" alt="Sertifikat Dicoding JS">
+                </div>
+                <div class="cert-body">
+                    <h3>Dicoding — JavaScript</h3>
+                    <span>Belajar Dasar Pemrograman JavaScript · Jan 2025</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-3">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat data analysis.png" alt="Developing Sites for the Web">
+                </div>
+                <div class="cert-body">
+                    <h3>MySkill - Data Analysis Fundamental</h3>
+                    <span>Belajar Data Analysis Fundamental · August 2025</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat ux writing.png" alt="Web Development Basics">
+                </div>
+                <div class="cert-body">
+                    <h3>MySkill - UX Writing Introduction</h3>
+                    <span>Belajar UX Writing Introduction · August 2025 </span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-3">
+                <div class="cert-img-wrap">
+                    <img src="image/developing sites for the web.png" alt="Developing Sites for the Web">
+                </div>
+                <div class="cert-body">
+                    <h3>IBM - Developing Sites for the Web</h3>
+                    <span>Belajar Developing Sites for the Web · Oct 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/web development basics.png" alt="Web Development Basics">
+                </div>
+                <div class="cert-body">
+                    <h3>IBM - Web Development Basics</h3>
+                    <span>Belajar Web Development Basics · Oct 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-3">
+                <div class="cert-img-wrap">
+                    <img src="image/seritifikat coding adventure.jpg" alt="Coding Adventure">
+                </div>
+                <div class="cert-body">
+                    <h3>Coding Adventure</h3>
+                    <span>Creating Your Own Digital World · April 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat code.org.jpg" alt="Code.org">
+                </div>
+                <div class="cert-body">
+                    <h3>Express Course - Code.org</h3>
+                    <span>Certificate of Completion · April 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-2">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat k3.png" alt="K3">
+                </div>
+                <div class="cert-body">
+                    <h3>Keselamatan & Kesehatan Kerja</h3>
+                    <span>ILO · e-Learning K3 · August 2024</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -4,162 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kampung Adat Naga</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Work.html">WORK</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-    <main>
-        <div id="Article" class="Article">
-            <div class="Article">
-                <h1>Kampung Adat Naga</h1>
+    <article class="article-section">
+
+        <!-- Back + GitHub -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:12px;">
+            <a href="Work.html" style="display:inline-flex;align-items:center;gap:6px;color:var(--rose);font-size:.9rem;font-weight:500;text-decoration:none;">
+                <i class='bx bx-arrow-back'></i> Kembali ke Work
+            </a>
+            <a href="https://github.com/daraaprilia" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:6px;font-size:.85rem;padding:9px 20px;">
+                <i class='bx bxl-github'></i> Lihat di GitHub
+            </a>
+        </div>
+
+        <!-- Label & Title -->
+        <span style="font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500;">Budaya Sunda · Tasikmalaya</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3.2rem);color:var(--ink);margin:10px 0 24px;line-height:1.1;">Kampung Adat <em style="color:var(--rose);">Naga</em></h1>
+
+        <img src="image/kampung naga.webp" alt="Kampung Adat Naga" class="article-hero-img">
+
+        <!-- Sejarah -->
+        <h1>Sajarah Singget Kampung Adat Naga</h1>
+        <p>Kampung Adat Naga nyaeta hiji kampung tradisional anu parenahna di <strong>Desa Neglasari, Kacamatan Salawu, Kabupaten Tasikmalaya, Jawa Barat</strong>. Mangrupa kampung adat nu masih ngajaga tradisi Sunda.</p>
+        <p>Numutkeun carita turun-tumurun, kampung ieu geus aya ti jaman Karajaan Pajajaran jeung jadi tempat panyumputan pengikutna sanggeus karajaan éta runtuh. Masarakat Kampung Naga ngajaga adat, saperti wangunan tradisional, sistem pertanian, jeung cara hirup anu henteu make téknologi modéren.</p>
+        <p>Kapamimpinan adat dijaga ku kuncén, anu ngajarkeun nilai karuhun ka generasi salajengna. Sanajan aya pangaruh modérn, Kampung Naga tetep jadi simbol kelestarian Budaya Sunda.</p>
+
+        <hr class="divider">
+
+        <!-- Lokasi -->
+        <h1>Lokasi Kampung Adat Naga</h1>
+        <img src="image/lokasi kampung adat naga.png" alt="Lokasi Kampung Adat Naga" class="article-img">
+        <p>Kampung Adat Naga terletak di <strong>Desa Neglasari, Kecamatan Salawu, Kabupaten Tasikmalaya, Jawa Barat, Indonesia</strong>. Kampung ini terkenal karena masih mempertahankan adat dan tradisi Sunda yang kuat, termasuk arsitektur rumah tradisional, pola kehidupan masyarakat, serta sistem kepercayaan yang erat dengan alam.</p>
+        <p>Untuk mencapai Kampung Naga, pengunjung harus menuruni sekitar <strong>400 anak tangga</strong> dari jalan utama, melewati hutan bambu dan persawahan yang indah. Kampung ini sering menjadi tujuan wisata budaya dan penelitian bagi mereka yang tertarik dengan kearifan lokal masyarakat Sunda.</p>
+
+        <hr class="divider">
+
+        <!-- Struktur Organisasi -->
+        <h1>Struktur Organisasi Kampung Adat Naga</h1>
+        <img src="image/struktur organisasi.png" alt="Struktur Organisasi" class="article-img">
+        <p>Struktur organisasi Kampung Adat Naga dipingpin ku <strong>Kuncen</strong>, nu nanggungjawab kana adat, ritual, jeung kaputusan penting. Anjeunna dibantu ku <strong>Punduh</strong>, nu jadi penghubung masarakat sarta miara kasajahteraan warga.</p>
+        <p>Lebé ngurus ibadah jeung kahirupan agama, sedengkeun Gurawis ngalaksanakeun pancén sosial. Warga Kampung Naga, disebut <strong>Rahayat Kampung</strong>, wajib ngajaga adat jeung kaharmonisan.</p>
+
+        <!-- Jabatan cards -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin:20px 0 32px;">
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;">
+                <div style="font-size:1.6rem;margin-bottom:8px;">👑</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--rose);margin-bottom:4px;">Kuncen</h3>
+                <p style="font-size:.8rem;color:var(--ink-soft);">Ketua Adat</p>
             </div>
-            <div class="Article-container">
-                <div class="Article-box">
-                    <div class="Article-image">
-                        <a href="image/kampung naga.webp"><img src="image/kampung naga.webp" alt="kampung adat" /></a>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;">
+                <div style="font-size:1.6rem;margin-bottom:8px;">🏛️</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--rose);margin-bottom:4px;">Punduh</h3>
+                <p style="font-size:.8rem;color:var(--ink-soft);">Kepala Pemerintahan Adat</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;">
+                <div style="font-size:1.6rem;margin-bottom:8px;">🕌</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--rose);margin-bottom:4px;">Lebé</h3>
+                <p style="font-size:.8rem;color:var(--ink-soft);">Pemimpin Keagamaan</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;">
+                <div style="font-size:1.6rem;margin-bottom:8px;">🧓</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--rose);margin-bottom:4px;">Rama</h3>
+                <p style="font-size:.8rem;color:var(--ink-soft);">Sesepuh Adat</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;">
+                <div style="font-size:1.6rem;margin-bottom:8px;">📜</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--rose);margin-bottom:4px;">Juru Tulis</h3>
+                <p style="font-size:.8rem;color:var(--ink-soft);">Sekretaris Adat</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Bangunan -->
+        <h1>Ngaran Imah & Bangunan Kampung Adat Naga</h1>
+        <img src="image/kampung adat.jpg" alt="Bangunan Kampung Adat Naga" class="article-img">
+        <ol>
+            <li><strong>Imah (Rorompok Warga)</strong> — Imah panggung has Sunda, dihuni ku masarakat Kampung Naga. Dijieun tina bahan alami kawas kai, awi, jeung ijuk.</li>
+            <li><strong>Bale Patemon</strong> — Tempat pikeun musyawarah adat jeung kagiatan masarakat.</li>
+            <li><strong>Leuit (Lumbung Pare)</strong> — Tempat nyimpen hasil panén, utamana pare, pikeun cadangan pangan warga.</li>
+            <li><strong>Langgar/Mushola</strong> — Tempat ibadah pikeun masarakat Kampung Naga anu ngagem agama Islam.</li>
+            <li><strong>Bumi Ageung (Imah Kuncen)</strong> — Imah husus pikeun Kuncen, pamingpin adat Kampung Naga.</li>
+        </ol>
+
+        <hr class="divider">
+
+        <!-- Jumlah Bangunan -->
+        <h1>Jumlah Wangunan Kampung Adat Naga</h1>
+        <img src="image/jumlah kampung naga.jpg" alt="Jumlah Bangunan" class="article-img">
+        <p>Di Kampung Adat Naga, jumlah wangunan <strong>tetep tur teu meunang nambahan atawa ngurangan</strong> nurutkeun aturan adat. Jumlah total wangunan nyaéta <strong>118 wangunan</strong>:</p>
+
+        <!-- Jumlah visual -->
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin:16px 0 32px;">
+            <div style="display:flex;flex-direction:column;gap:12px;">
+                <div style="display:flex;align-items:center;gap:14px;">
+                    <span style="font-size:.85rem;color:var(--ink-soft);min-width:180px;">Imah (Rorompok Warga)</span>
+                    <div style="flex:1;background:rgba(202,97,128,.12);border-radius:99px;height:10px;">
+                        <div style="background:var(--rose);width:91.5%;height:100%;border-radius:99px;"></div>
                     </div>
-                    <hr>
-                    <div class="Sunda-info">
-                        <br>
-                        <br>
-                        <h1>Sejarah Singget Kampung Adat Naga</h1>
-                        <p>Kampung Adat Naga nyaeta hiji kampung tradisional anu parenahna di Desa Neglasari, Kacamatan Salawu, Kabupaten Tasikmalaya, Jawa Barat. 
-                            mangrupa kampung adat nu masih ngajaga tradisi Sunda. Numutkeun carita turun-tumurun, kampung ieu geus aya ti jaman Karajaan Pajajaran jeung jadi tempat panyumputan pengikutna sanggeus karajaan éta runtuh. 
-                            Masarakat Kampung Naga ngajaga adat, saperti wangunan tradisional, sistem pertanian, jeung cara hirup anu henteu make téknologi modéren. Kapamimpinan adat dijaga ku kuncén, anu ngajarkeun nilai karuhun ka generasi salajengna. Sanajan aya pangaruh modérn, Kampung Naga tetep jadi simbol kelestarian Budaya Sunda.
-                        </p>
-                        <br>
-                        <h1>Lokasi Kampung Adat Naga</h1>
-                    <div class="Sunda-image">
-                        <a href="image/lokasi kampung adat naga.png"><img src="image/lokasi kampung adat naga.png" width="400px" /></a>
+                    <span style="font-size:.85rem;font-weight:600;color:var(--rose);min-width:40px;text-align:right;">108</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:14px;">
+                    <span style="font-size:.85rem;color:var(--ink-soft);min-width:180px;">Leuit (Lumbung Pare)</span>
+                    <div style="flex:1;background:rgba(202,97,128,.12);border-radius:99px;height:10px;">
+                        <div style="background:var(--rose-light);width:5%;height:100%;border-radius:99px;"></div>
                     </div>
-                        <p>Kampung Adat Naga terletak di Desa Neglasari, Kecamatan Salawu, Kabupaten Tasikmalaya, Jawa Barat, Indonesia. Kampung ini terkenal karena masih mempertahankan adat dan tradisi Sunda yang kuat, termasuk arsitektur rumah tradisional, pola kehidupan masyarakat, serta sistem kepercayaan yang erat dengan alam. 
-                            Untuk mencapai Kampung Naga, pengunjung harus menuruni sekitar 400 anak tangga dari jalan utama, melewati hutan bambu dan persawahan yang indah. Kampung ini sering menjadi tujuan wisata budaya dan penelitian bagi mereka yang tertarik dengan kearifan lokal masarakat Sunda.</p>
-                        <br>
-                        <h1>Struktur organisasi Kampung Adat Naga</h1>
-                    <div class="Sunda-image">
-                        <a href="image/struktur organisasi.png"><img src="image/struktur organisasi.png" width="400px" /></a>
+                    <span style="font-size:.85rem;font-weight:600;color:var(--rose);min-width:40px;text-align:right;">6</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:14px;">
+                    <span style="font-size:.85rem;color:var(--ink-soft);min-width:180px;">Bale Patemon</span>
+                    <div style="flex:1;background:rgba(202,97,128,.12);border-radius:99px;height:10px;">
+                        <div style="background:var(--rose-light);width:1%;height:100%;border-radius:99px;"></div>
                     </div>
-                        <p>Struktur organisasi Kampung Adat Naga dipingpin ku Kuncen, nu nanggungjawab kana adat, ritual, jeung kaputusan penting. Anjeunna dibantu ku Punduh, nu jadi penghubung masarakat sarta miara kasajahteraan warga. Lebé ngurus ibadah jeung kahirupan agama, sedengkeun Gurawis ngalaksanakeun pancén sosial. 
-                            Warga Kampung Naga, disebut Rahayat Kampung, wajib ngajaga adat jeung kaharmonisan. Struktur ieu nunjukkeun rasa gotong royong jeung kelestarian tradisi karuhun.</p>
-                        <br>
-                        <h1>Sesebutan ngaran ketua adat atawa menteri-menteri di Kampung Adat Naga </h1>
-                        <p><li>Kuncen → Ketua Adat</li>
-                            <li>Punduh → Kepala Pemerintahan Adat</li>
-                            <li>Lebé → Pemimpin Keagamaan</li>
-                            <li>Rama → Sesepuh Adat</li>
-                            <li>Juru Tulis → Sekretaris Adat</li>
-                        </p>
-                        <br>
-                        <h1>Ngaran imah atawa bangunan kampung Adat Naga</h1>
-                    <div class="Sunda-image">
-                        <a href="image/kampung adat.jpg"><img src="image/kampung adat.jpg" width="400px" /></a>
+                    <span style="font-size:.85rem;font-weight:600;color:var(--rose);min-width:40px;text-align:right;">1</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:14px;">
+                    <span style="font-size:.85rem;color:var(--ink-soft);min-width:180px;">Langgar/Mushola</span>
+                    <div style="flex:1;background:rgba(202,97,128,.12);border-radius:99px;height:10px;">
+                        <div style="background:var(--rose-light);width:1%;height:100%;border-radius:99px;"></div>
                     </div>
-                        <p><ol>
-                            <li>Imah (Rorompok Warga)<br>
-                                → Imah panggung has Sunda, dihuni ku masarakat Kampung Naga.<br>
-                                → Dijieun tina bahan alami kawas kai, awi, jeung ijuk.<br>
-                            </li>
-                            <li>Bale Patemon<br>
-                                → Tempat pikeun musyawarah adat jeung kagiatan masarakat.<br>   
-                            </li>
-                            <li>Leuit (Lumbung Pare)<br>
-                                → Tempat nyimpen hasil panén, utamana pare, pikeun cadangan pangan warga.<br>
-                            </li>
-                            <li>Langgar/Mushola<br>
-                                → Tempat ibadah pikeun masarakat Kampung Naga anu ngagem agama Islam.<br>
-                            </li>
-                            <li>Bumi Ageung (Imah Kuncen)<br>
-                                → Imah husus pikeun Kuncen, pamingpin adat Kampung Naga.<br>
-                            </li>
-                            <li>Bale Patemon<br>
-                                → Tempat pikeun musyawarah adat jeung kagiatan masarakat.<br>
-                            </li></ol></p>
-                        <br>
-                        <h1>Jumlah Wangunan Kampung Adat Naga</h1>
-                    <div class="Sunda-image">
-                        <a href="image/jumlah kampung naga.jpg"><img src="image/jumlah kampung naga.jpg" width="400px" /></a>
+                    <span style="font-size:.85rem;font-weight:600;color:var(--rose);min-width:40px;text-align:right;">1</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:14px;">
+                    <span style="font-size:.85rem;color:var(--ink-soft);min-width:180px;">Bumi Ageung</span>
+                    <div style="flex:1;background:rgba(202,97,128,.12);border-radius:99px;height:10px;">
+                        <div style="background:var(--rose-light);width:1%;height:100%;border-radius:99px;"></div>
                     </div>
-                        <p>Di Kampung Adat Naga, jumlah wangunan tetep tur teu meunang nambahan atawa ngurangan nurutkeun aturan adat.
-                            Jumlah total wangunan di Kampung Naga nyaéta 118 wangunan, anu diwangun ku sababaraha rupa wangunan:</p>
-                            <ol>
-                            <li>Imah (Rorompok Warga) → 108 unit</li>
-                            <li>Bale Patemon → 1 unit</li>
-                            <li>Leuit (Lumbung Pare) → 6 unit</li>
-                            <li>Langgar/Mushola → 1 unit</li>
-                            <li>Bumi Ageung (Imah Kuncen) → 1 unit</li>
-                            <li>Bale Patemon → 1 unit</li>
-                            </ol>
-                        <br>
-                        <h1>Aturan/Kapamalian Kampung Adat Sunda</h1>
-                        <p>Di Kampung Adat Sunda, aya sababaraha kapamalian anu dijaga pikeun ngajaga kasaimbangan hirup. 
-                            Dina kahirupan sapopoe, teu meunang diuk dina bantal sabab bisa nyababkeun bisul, siul peuting 
-                            di jero imah lantaran bisa ngundang roh halus, jeung nyapu peuting sabab dipercaya miceun rejeki.
-                            Dina hubungan jeung alam, nebang tatangkalan tanpa ijin atawa ngala hasil leuweung kaleuleuwihi 
-                            dilarang supaya alam tetep saimbang. Teu meunang ngomong sambarangan di tempat keramat saperti leuweung, 
-                            cinyusu, jeung walungan. Dina perkawinan, teu meunang nikah dina bulan Sapar jeung panganten teu meunang patepung 
-                            saméméh akad nikah pikeun ngajauhan halangan.
-                            Dina perkara maot, henteu meunang teuing ceurik sabab bisa ngaganggu arwah, nyebut ngaran nu maot peuting ogé dilarang. 
-                            Nyapu atawa beberesih imah salila tahlilan dipercaya bisa ngusir arwah. Kapamalian ieu masih dijaga di sababaraha Kampung 
-                            Adat Sunda saperti Kampung Naga, Baduy, Ciptagelar, jeung Kasepuhan minangka warisan budaya karuhun.
-                        </p>
-                        <br>
-                        <h1>Ngaran upacara-upacara Adat di Kampung Adat Naga</h1>
-                        <div class="Sunda-image">
-                            <a href="image/upacara adat.webp"><img src="image/upacara adat.webp" width="300px" /></a>
-                        </div>
-                        <p>Di Kampung Adat Naga, aya sababaraha upacara adat anu masih dijaga, di antarana:</p>
-                        <ol>
-                        <li>Hajat Sasih – Upacara syukuran ka Gusti Allah jeung karuhun, dilaksanakeun dua kali sataun.</li>
-                        <li>Ngadiukeun – Upacara pikeun ngasupkeun anggota anyar ka komunitas Kampung Naga.</li>
-                        <li>Mitembeyan – Upacara pamundut berkah saméméh mimiti tatanén.</li>
-                        <li>Seren Taun – Upacara panén raya minangka rasa syukur.</li>
-                        <li>Rebo Wekasan – Doa bareng pikeun nyingkahan musibah dina Rebo terakhir bulan Safar.</li>
-                        <li>Mapag Cai – Upacara ngajaga kahadean jeung berkah cai.</li>
-                        </ol>
-                        <br>
-                        <h1>Agama anu dianut di Kampung Adat Naga</h1>
-                        <p>Masarakat Kampung Adat Naga umumna nganut agama Islam, tapi masih ngajaga kuat unsur budaya jeung tradisi karuhun. 
-                            Sanajan Muslim, aranjeunna tetep ngalaksanakeun upacara adat anu diwariskeun turun-temurun, sapertos Hajat Sasih, 
-                            Seren Taun, jeung Mitembeyan, nu patali jeung rasa syukur ka Gusti Allah jeung karuhun.
-                            Keyakinan masarakat Kampung Naga luyu jeung Islam Sunda buhun, anu ngahijikeun ajaran Islam jeung unsur budaya lokal. 
-                            Aranjeunna masih ngajénan roh karuhun, ngajaga leuweung larangan, jeung nurut kana aturan adat anu dijaga ketat. Sanajan kitu, 
-                            kabéh ritual adat dilakukeun minangka bagian tina budaya, lain ritual ibadah.
-                        </p>
-                        <br>
-                        <h1>Fakta unik anu aya di Kampung Adat Naga</h1>
-                        <p>Kampung Adat Naga mibanda sababaraha fakta unik anu ngajadikeun eta kampung béda ti nu séjén. Salah sahijina nyaéta Leuweung Larangan, 
-                            tempat anu dianggap keramat sarta teu meunang ditebang supaya alam tetep saimbang. Masarakat Kampung Naga ogé teu nganggo listrik ti PLN, 
-                            langkung milih lampu sentir atawa lilin peuting-peuting. Salian ti éta, jumlah imah tetep 118 unit, teu meunang ditambah atawa dikirangan, 
-                            sarta ukuranana kudu dijaga sarua. Wangunan ogé teu meunang maké bahan modéren kawas sémen jeung beusi.
-                            Masarakatna ogé teu meunang ngagedéan imah atawa ngarobah wangunan asalna. Dina kahirupan sapopoé, aranjeunna hirup sederhana tur pageuh kana 
-                            aturan adat anu ketat, sapertos teu maké téknologi modéren kawas TV atawa motor di jero kampung. Salah sahiji upacara pangpentingna nyaéta Hajat Sasih, 
-                            nu dilaksanakeun dua kali sataun minangka ungkapan rasa syukur ka Gusti Allah jeung ngahormat ka karuhun.
-                            Sanajan hirup dina kaayaan tradisional, masarakat Kampung Naga betah jeung reugreug kana kabiasaanana. Teu sakabéh jalma bisa jadi warga Kampung Naga, 
-                            sabab nu hayang cicing di dinya kudu siap nurut kana sagala aturan adat anu geus diwariskeun turun-temurun.
-                        </p>
-                    </div>
+                    <span style="font-size:.85rem;font-weight:600;color:var(--rose);min-width:40px;text-align:right;">1</span>
+                </div>
+                <div style="border-top:1px solid var(--border);padding-top:12px;display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-size:.9rem;font-weight:600;color:var(--ink);">Total Wangunan</span>
+                    <span style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--rose);">118</span>
                 </div>
             </div>
         </div>
-    </main>
+
+        <hr class="divider">
+
+        <!-- Kapamalian -->
+        <h1>Aturan / Kapamalian Kampung Adat Sunda</h1>
+        <p>Di Kampung Adat Sunda, aya sababaraha kapamalian anu dijaga pikeun ngajaga kasaimbangan hirup:</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0 32px;">
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">🪑</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Teu meunang diuk dina bantal — bisa nyababkeun bisul.</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">🌙</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Teu meunang siul peuting di jero imah — bisa ngundang roh halus.</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">🌳</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Dilarang nebang tatangkalan tanpa ijin di leuweung larangan.</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">💒</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Teu meunang nikah dina bulan Sapar jeung panganten teu meunang patepung saméméh akad.</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">🧹</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Nyapu peuting dipercaya miceun rejeki ti imah.</p>
+            </div>
+            <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:var(--radius);padding:18px;">
+                <div style="font-size:1.4rem;margin-bottom:8px;">🕯️</div>
+                <p style="font-size:.88rem;color:var(--ink-soft);line-height:1.65;">Nyapu atawa beberesih imah salila tahlilan bisa ngusir arwah.</p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Upacara Adat -->
+        <h1>Upacara-Upacara Adat di Kampung Adat Naga</h1>
+        <img src="image/upacara adat.webp" alt="Upacara Adat" class="article-img">
+        <ol>
+            <li><strong>Hajat Sasih</strong> — Upacara syukuran ka Gusti Allah jeung karuhun, dilaksanakeun dua kali sataun.</li>
+            <li><strong>Ngadiukeun</strong> — Upacara pikeun ngasupkeun anggota anyar ka komunitas Kampung Naga.</li>
+            <li><strong>Mitembeyan</strong> — Upacara pamundut berkah saméméh mimiti tatanén.</li>
+            <li><strong>Seren Taun</strong> — Upacara panén raya minangka rasa syukur.</li>
+            <li><strong>Rebo Wekasan</strong> — Doa bareng pikeun nyingkahan musibah dina Rebo terakhir bulan Safar.</li>
+            <li><strong>Mapag Cai</strong> — Upacara ngajaga kahadean jeung berkah cai.</li>
+        </ol>
+
+        <hr class="divider">
+
+        <!-- Agama -->
+        <h1>Agama anu Dianut di Kampung Adat Naga</h1>
+        <p>Masarakat Kampung Adat Naga umumna nganut <strong>agama Islam</strong>, tapi masih ngajaga kuat unsur budaya jeung tradisi karuhun. Sanajan Muslim, aranjeunna tetep ngalaksanakeun upacara adat anu diwariskeun turun-temurun, sapertos Hajat Sasih, Seren Taun, jeung Mitembeyan.</p>
+        <p>Keyakinan masarakat Kampung Naga luyu jeung <strong>Islam Sunda buhun</strong>, anu ngahijikeun ajaran Islam jeung unsur budaya lokal. Kabéh ritual adat dilakukeun minangka bagian tina budaya, lain ritual ibadah.</p>
+
+        <hr class="divider">
+
+        <!-- Fakta Unik -->
+        <h1>Fakta Unik Kampung Adat Naga</h1>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0 32px;">
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">🌲</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">Leuweung Larangan</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">Hutan keramat yang tidak boleh ditebang — dijaga untuk menjaga keseimbangan alam.</p>
+            </div>
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">🕯️</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">Tanpa Listrik PLN</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">Warga tidak menggunakan listrik dari PLN — lebih memilih lampu sentir atau lilin di malam hari.</p>
+            </div>
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">🏠</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">118 Rumah Tetap</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">Jumlah rumah tidak boleh bertambah atau berkurang — ukuran dan bahan bangunan pun harus sama.</p>
+            </div>
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">📵</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">Tanpa Teknologi Modern</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">TV, motor, dan teknologi modern tidak diperkenankan masuk ke dalam kampung.</p>
+            </div>
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">🚫</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">Seleksi Warga Ketat</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">Tidak semua orang bisa tinggal di Kampung Naga — harus siap menaati seluruh aturan adat.</p>
+            </div>
+            <div style="background:rgba(202,97,128,.07);border:1px solid var(--border);border-radius:var(--radius);padding:20px;">
+                <div style="font-size:1.6rem;margin-bottom:10px;">🙏</div>
+                <h3 style="font-family:var(--font-display);font-size:.95rem;color:var(--ink);margin-bottom:6px;">Hajat Sasih</h3>
+                <p style="font-size:.83rem;color:var(--ink-soft);line-height:1.65;">Upacara terpenting diadakan dua kali setahun sebagai ungkapan syukur kepada Allah dan leluhur.</p>
+            </div>
+        </div>
+
+        <!-- Nav bawah -->
+        <div style="display:flex;justify-content:flex-start;margin-top:48px;">
+            <a href="Work.html" class="btn-outline" style="display:inline-flex;align-items:center;gap:8px;">
+                <i class='bx bx-left-arrow-alt'></i> Kembali ke Work
+            </a>
+        </div>
+
+    </article>
 
     <footer class="footer">
-        <p> dara's portofolio &copy; 2024, Indonesia</p>
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
     </footer>
-    </body>
-    </html>
+    <script src="main.js"></script>
+</body>
+</html>

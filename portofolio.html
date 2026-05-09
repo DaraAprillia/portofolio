@@ -3,90 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 class="nama">DARA</h1>
-            <nav class="navbar">
-            <ul>
-               <li><a href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
-               <li><a href="portofolio.html">PORTOFOLIO</a></li>
-               <li> <a href="Work.html">WORK</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
-           </ul>
-            </nav>
-        </nav>
-    </header>
-       
-<main>
-    <div id="Education" class="Portofolio">
-        <div class="headersklills">
-            <h1>My <span>Portofolio</span></h1>
-        </div>
-        <div class="portofolio-container">
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/serifikat dicoding.png"><img src="image/serifikat dicoding.png" alt="sertifikat dicoding" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat Dicoding Web</h1>
-                </div>
-            </div>
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/sertifikat dicoding js.png"><img src="image/sertifikat dicoding js.png" alt="sertifikat dicoding" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat Dicoding JS</h1>
-                </div>
-            </div>
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/seritifikat coding adventure.jpg"><img src="image/seritifikat coding adventure.jpg" alt="sertifikatcoding adventure" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat Coding Adventure</h1>
-                </div>
-            </div>
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/sertifikat code.org.jpg"><img src="image/sertifikat code.org.jpg" alt="serifikat code.org" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat Code.org </h1>
-                </div>
-            </div>
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/sertifikat k3.png"><img src="image/sertifikat k3.png" alt="setifikat k3" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat K3</h1>
-                </div>
-            </div>
-            <div class="education-box">
-                <div class="education-image">
-                    <a href="image/sertifikat igdx.png"><img src="image/sertifikat igdx.png" alt="setifikat igdx" /></a>
-                </div>
-                <div class="education-info">
-                    <br>
-                    <h1>Sertifikat IGDX</h1>
-                </div>
-            </div>
-        </div>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portofolio.html" class="active">Portfolio</a></li>
+            <li><a href="Work.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
+
+    <div class="page-hero">
+        <span class="tag">✦ Achievements</span>
+        <h1>My <em>Certificates</em></h1>
+        <p>Sertifikasi yang saya raih dari berbagai platform dan program pelatihan — bukti komitmen saya untuk terus belajar dan berkembang di dunia teknologi.</p>
     </div>
-</main>
+
+    <section class="section">
+        <div class="cards-grid">
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/serifikat dicoding.png" alt="Sertifikat Dicoding Web">
+                </div>
+                <div class="cert-body">
+                    <h3>Dicoding — Web Development</h3>
+                    <span>Belajar Dasar Pemrograman Web · Nov 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-2">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat dicoding js.png" alt="Sertifikat Dicoding JS">
+                </div>
+                <div class="cert-body">
+                    <h3>Dicoding — JavaScript</h3>
+                    <span>Belajar Dasar Pemrograman JavaScript · Jan 2025</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-3">
+                <div class="cert-img-wrap">
+                    <img src="image/seritifikat coding adventure.jpg" alt="Coding Adventure">
+                </div>
+                <div class="cert-body">
+                    <h3>Coding Adventure</h3>
+                    <span>Creating Your Own Digital World · SMK Wikrama Bogor</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat code.org.jpg" alt="Code.org">
+                </div>
+                <div class="cert-body">
+                    <h3>Code.org</h3>
+                    <span>Express Course · Certificate of Completion</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-2">
+                <div class="cert-img-wrap">
+                    <img src="image/sertifikat k3.png" alt="K3">
+                </div>
+                <div class="cert-body">
+                    <h3>Keselamatan & Kesehatan Kerja</h3>
+                    <span>ILO · e-Learning K3 · Agustus 2024</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-3">
+                <div class="cert-img-wrap">
+                    <img src="image/developing sites for the web.png" alt="Developing Sites for the Web">
+                </div>
+                <div class="cert-body">
+                    <h3>Developing Sites for the Web</h3>
+                    <span>MDL-262 · Moodle System of Record</span>
+                </div>
+            </div>
+
+            <div class="cert-card fade-in fade-in-1">
+                <div class="cert-img-wrap">
+                    <img src="image/web development basics.png" alt="Web Development Basics">
+                </div>
+                <div class="cert-body">
+                    <h3>Web Development Basics</h3>
+                    <span>Moodle System of Record</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <footer class="footer">
-        <p> dara's portofolio &copy; 2024, Indonesia</p>
+        <p>© 2024 <strong>Dara Aprillia</strong> — Bogor, Indonesia</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

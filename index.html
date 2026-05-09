@@ -4,56 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dara Aprillia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-     <nav>
-        <h1 class="nama">DARA</h1>
-        <nav class="navbar">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="portofolio.html">PORTOFOLIO</a></li>
-            <li> <a href="Work.html">WORK</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">DARA</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Work.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        </nav>
-     </nav>
-    </header>
-   
-<main>
-    <section id="HOME" class="home">
-        <h1 class="typing">Hello!</h1>
-        <h2>Welcome to my portofolio website!</h2>
-        <p>
-            Hello, my name is Dara Aprillia.<br>
-            I am 15 years old. I was born in Bogor,<br>
-            April 15th 2010. I live in Bogor city.<br>
-            Currently, I am studying in<br> 
-            Vocational High School Wikrama.<br>
-        </p>
-        <img src="image/dara.jpeg">
-    </section>
-        <br>
-        <br>
+        <button class="hamburger" id="hamburger"><i class='bx bx-menu'></i></button>
+    </nav>
 
-    <section id="CONTACT" class="contact">
-        <div class="home-sci">
-            <a href="https://wa.me/+6285724727301?>?text=hello!" target="_blank">
-                <i class='bx bxl-whatsapp'></i>
-            </a>
-            <a href="https://www.instagram.com/__daraaprrl?igsh=MmRsMGh2bnN0bWc1?>" target="_blank">
-                <i class='bx bxl-instagram'></i>
-            </a>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-label">✦ Hello, I'm</span>
+            <h1 class="hero-title">Dara<br><em>Aprillia</em></h1>
+            <p class="hero-sub">Student at SMK Wikrama Bogor<br>Passionate about Web & Software Development</p>
+            <div class="hero-btns">
+                <a href="Work.html" class="btn-primary">See My Work</a>
+                <a href="image/CV Dara Aprillia.pdf" download class="btn-outline"><i class="bx bx-download"></i> Download CV</a>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com/__daraaprrl" target="_blank" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/dara-aprillia-b47531371/" target="_blank" title="linkedin"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+        <div class="hero-img-wrap">
+            <div class="hero-img-blob"></div>
+            <img src="image/dara.jpeg" alt="Dara Aprillia" class="hero-img">
         </div>
     </section>
-    <br>
-    <br>
-</main>
+
+    <!-- QUICK STATS -->
+    <section class="stats">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Certificates</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Schools</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">2024</span><span class="stat-label">Class of</span></div>
+    </section>
+
     <footer class="footer">
-        <p>dara's portofolio &copy; 2024, Indonesia </p>
+        <p>© 2024 Dara Aprillia — Bogor, Indonesia</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
